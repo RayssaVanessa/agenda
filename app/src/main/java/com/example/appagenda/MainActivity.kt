@@ -15,9 +15,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var campoLista: ListView
     lateinit var botaoSalvar: Button
     lateinit var botaoFiltrar: SearchView
-    lateinit var grupo: RadioGroup
-    lateinit var pessoal: RadioButton
-    lateinit var profissional: RadioButton
     private var listaFuncionario: ArrayList<String> = arrayListOf()
 
     val funcionarioAdapter by lazy { ArrayAdapter<String>(this, android.R.layout.simple_list_item_1) }
@@ -32,10 +29,6 @@ class MainActivity : AppCompatActivity() {
         campoLista = findViewById(R.id.lista)
         botaoSalvar = findViewById(R.id.btnSalvar)
         botaoFiltrar = findViewById(R.id.sv_pesquisar)
-        grupo = findViewById(R.id.radioGroup)
-        pessoal = findViewById(R.id.btnPessoal)
-        profissional = findViewById(R.id.btnProfissional)
-
 
         campoLista.adapter = funcionarioAdapter
 
@@ -46,14 +39,15 @@ class MainActivity : AppCompatActivity() {
 
             if (nome.isNotEmpty() && celular.isNotEmpty() && email.isNotEmpty()) {
                 listaFuncionario.add("$nome - $email \n $celular")
+                // funcao para atualizar lista e ordernar
                 atualizarLista()
                 campoNome.text.clear()
                 campoCelular.text.clear()
                 campoEmail.text.clear()
             } else {
-                campoNome.error = "Por favor digite um nome!"
-                campoCelular.error = "Por favor, digite um contato!"
-                campoEmail.error = "Por favor, digite um email!"
+                campoNome.error = getString(R.string.digiteUmNome)
+                campoCelular.error = getString(R.string.ErroCelular)
+                campoEmail.error = getString(R.string.ErroEmail)
             }
 
         }
@@ -64,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                     funcionarioAdapter.clear()
                     funcionarioAdapter.addAll(listaFuncionario.filter { it == query })
                 } else {
-                    Toast.makeText(this@MainActivity, "Item não encontrado !", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@MainActivity, getString(R.string.Itemnaoencontrado), Toast.LENGTH_LONG).show()
                 }
                 return true
             }

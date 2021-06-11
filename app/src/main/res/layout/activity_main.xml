@@ -8,110 +8,62 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arcoiris"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="151dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Minha agenda"
-            android:textColorLink="#08E040FB"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.086"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.022" />
+        <EditText
+            style="@style/titulo"
+            android:text="@string/titulo"
+
+            >
+
+        </EditText>
 
         <EditText
             android:id="@+id/cpNome"
-            android:layout_width="321dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:ems="10"
-            android:hint="Nome"
-            android:inputType="textPersonName"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="5dp"
-            tools:layout_editor_absoluteY="68dp" />
-
+            style="@style/insiraSeuNome"
+            android:background="@drawable/customizar"
+            android:drawableStart="@drawable/ic_baseline_perm_identity"
+            android:text="@string/Insiraseunome" />
 
         <EditText
             android:id="@+id/cpCel"
-            android:layout_width="326dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:ems="10"
-            android:hint="Celular"
-            android:inputType="number"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="12dp"
-            tools:layout_editor_absoluteY="152dp" />
-
+            style="@style/campoCel"
+            android:background="@drawable/customizar"
+            android:drawableStart="@drawable/ic_baseline_phone"
+            android:text="@string/celuar" />
 
         <EditText
             android:id="@+id/cpEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:ems="10"
-            android:hint="E-mail"
-            android:inputType="textEmailAddress"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <RadioGroup
-            android:id="@+id/radioGroup"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <RadioButton
-                android:id="@+id/btnPessoal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Pessoal" />
-            <RadioButton
-                android:id="@+id/btnProfissional"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Profissional" />
-        </RadioGroup>
-
-
-        <Button
-            android:id="@+id/btnSalvar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Salvar" />
+            style="@style/campoEmail"
+            android:background="@drawable/customizar"
+            android:drawableStart="@drawable/ic_baseline_email"
+            android:text="@string/Email" />
 
         <SearchView
             android:id="@+id/sv_pesquisar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:iconifiedByDefault="false"
-            android:queryHint="Pesquisar por nome">
+            style="@style/CampoPesquisa"
+            android:queryHint="Pesquisar por nome"
+            android:text="@string/PesquisarPornome">
 
         </SearchView>
 
+        <Button
+            android:id="@+id/btnSalvar"
+            style="@style/botao" />
+
         <ListView
+
             android:id="@+id/lista"
-            android:layout_width="775dp"
-            android:layout_height="535dp"
-            android:textFilterEnabled="false">
+            style="@style/lista">
 
         </ListView>
 
 
     </LinearLayout>
-
-
 
 
 </ScrollView>

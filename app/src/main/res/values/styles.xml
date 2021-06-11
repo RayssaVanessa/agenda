@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="insiraSeuNome">
+        <item name="android:layout_width">259dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">59dp</item>
+        <item name="android:layout_marginLeft">59dp</item>
+        <item name="android:layout_marginTop">80dp</item>
+        <item name="android:layout_marginEnd">59dp</item>
+        <item name="android:layout_marginRight">59dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/Insiraseunome</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="android:padding">15dp</item>
+
+
+    </style>
+    <style name="campoCel">
+        <item name="android:layout_width">263dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">58dp</item>
+        <item name="android:layout_marginLeft">58dp</item>
+        <item name="android:layout_marginEnd">58dp</item>
+        <item name="android:layout_marginRight">58dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/celuar</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="campoEmail">
+        <item name="android:layout_width">283dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">45dp</item>
+        <item name="android:layout_marginLeft">45dp</item>
+        <item name="android:layout_marginRight">45dp</item>
+        <item name="android:layout_marginBottom">29dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/Email</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:padding">15dp</item>
+
+
+</style>
+    <style name="CampoPesquisa">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:iconifiedByDefault">false</item>
+        <item name="queryHint">@string/PesquisarPornome</item>
+
+    </style>
+    <style name="botao">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/purple_200</item>
+        <item name="android:text">@string/Botaosalvar</item>
+        <item name="android:textColorHighlight">@color/purple_200</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">15dp
+        </item>
+    </style>
+    <style name="lista">
+        <item name="android:layout_width">775dp</item>
+        <item name="android:layout_height">535dp</item>
+        <item name="android:textFilterEnabled">false</item>
+
+
+   </style>
+    <style name="titulo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+</resources>
+

@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">App Agenda</string>
+    <string name="Insiraseunome">Insira seu nome</string>
+    <string name="PesquisarPornome"> Pesquisar por nome</string>
+    <string name="Botaosalvar"> Salvar</string>
+    <string name="Email"> E-mail</string>
+    <string name="celuar"> Insira um telefone</string>
+    <string name="titulo">Minha genda</string>
+    <string name="digiteUmNome">Por favor, digite um nome!</string>
+    <string name="ErroCelular">Por favor, digite um número</string>
+    <string name="ErroEmail">Por favor, digite um email</string>
+    <string name="Itemnaoencontrado">Item não encontrado</string>
+
 </resources>
