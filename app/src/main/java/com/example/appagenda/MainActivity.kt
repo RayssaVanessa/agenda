@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var campoLista: ListView
     lateinit var botaoSalvar: Button
     lateinit var botaoFiltrar: SearchView
+    lateinit var radio:RadioGroup
+    lateinit var refPessoal:RadioButton
+    lateinit var refTrabalho:RadioButton
     private var listaFuncionario: ArrayList<String> = arrayListOf()
 
     val funcionarioAdapter by lazy { ArrayAdapter<String>(this, android.R.layout.simple_list_item_1) }
@@ -29,6 +32,9 @@ class MainActivity : AppCompatActivity() {
         campoLista = findViewById(R.id.lista)
         botaoSalvar = findViewById(R.id.btnSalvar)
         botaoFiltrar = findViewById(R.id.sv_pesquisar)
+        radio = findViewById(R.id.radioGroup)
+        refPessoal = findViewById(R.id.radioPessoal)
+        refTrabalho = findViewById(R.id.radioTrabalho)
 
         campoLista.adapter = funcionarioAdapter
 
