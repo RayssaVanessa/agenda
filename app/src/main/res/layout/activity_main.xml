@@ -14,34 +14,13 @@
         android:background="@drawable/arcoiris"
         android:orientation="vertical">
 
-        <TextView
-            style="@style/titulo"
-            android:layout_width="133dp"
-            android:text="Minha agenda"
-            android:textSize="20sp" />
 
-
-        <EditText
-            android:id="@+id/cpNome"
-            style="@style/insiraSeuNome"
-            android:layout_gravity="center|left"
-            android:background="@drawable/customizar"
-            android:drawableStart="@drawable/ic_baseline_perm_identity" />
-
-        <EditText
-            android:id="@+id/cpCel"
-            style="@style/campoCel"
-            android:layout_gravity="center|left"
-            android:background="@drawable/customizar"
-            android:drawableStart="@drawable/ic_baseline_phone" />
-
-        <EditText
-            android:id="@+id/cpEmail"
-            style="@style/campoEmail"
-            android:layout_width="303dp"
-            android:layout_gravity="center|left"
-            android:background="@drawable/customizar"
-            android:drawableStart="@drawable/ic_baseline_email" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Adicionar contato"
+            android:id="@+id/btn_adicionar"
+            />
 
         <SearchView
             android:id="@+id/sv_pesquisar"
@@ -50,32 +29,6 @@
             android:text="@string/PesquisarPornome">
 
         </SearchView>
-
-        <RadioGroup
-            android:id="@+id/radioGroup"
-            android:layout_width="377dp"
-            android:layout_height="wrap_content">
-
-            <RadioButton
-                android:id="@+id/radioPessoal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:hint="Pessoal" />
-
-            <RadioButton
-                android:id="@+id/radioTrabalho"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:hint="Trabalho" />
-
-
-        </RadioGroup>
-
-        <Button
-            android:id="@+id/btnSalvar"
-            style="@style/botao" />
 
         <ListView
 
